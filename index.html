@@ -78,7 +78,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|JetBrains Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -385,7 +385,9 @@
 <blockquote>
 <p>请注意，子类的初始方法不应覆盖父类的初始方法，否则父类的初始方法将不会被调用，而子类的初始方法将被<code>调用两次</code>。</p>
 </blockquote>
-<h3 id="Apply-on-Class"><a href="#Apply-on-Class" class="headerlink" title="Apply on Class"></a>Apply on Class</h3><p>![img](/Users/lhj/Library/Mobile Documents/com<del>apple</del>CloudDocs/md/ZK/ZK-MVVM-02-ViewModel.assets/wpsJp8sYU.png)Since 6.0.1</p>
+<h3 id="Apply-on-Class"><a href="#Apply-on-Class" class="headerlink" title="Apply on Class"></a>Apply on Class</h3><blockquote>
+<p>Since 6.0.1</p>
+</blockquote>
 <p>如果super具有初始化方法，但其ChildViewModel没有，则可以在ChildViewModel上添加@Init（superclass = true）以使用super的初始化方法。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ParentViewModel</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Init</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Init</span>(superclass = <span class="keyword">true</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ChildViewModel</span> <span class="keyword">extends</span> <span class="title">ParentViewModel</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
