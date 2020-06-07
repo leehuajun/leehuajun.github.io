@@ -108,7 +108,7 @@
 
 
 
-  <meta name="keywords" content="zk," />
+  <meta name="keywords" content="mysql," />
 
 
 
@@ -119,20 +119,19 @@
 
 
 
-<meta name="description" content="简介MVVM简介MVVM [1]是源自Microsoft的设计模式Model-View-ViewModel的缩写。[2] 它是由著名的MVC模式的变体Martin Fowler引入的Presentation Model [3]的一种特殊化。 此模式具有3个角色：View，Model和ViewModel。 View 和 Model 起着与MVC中相同的作用。 MVVM中的ViewModel就像Vie">
+<meta name="description" content="1、下载MySQL（5.7.x）2、安装MySQL（略）3、修改密码1）打开终端，为Path路径附加MySQL的bin目录1export PATH&#x3D;&quot;$PATH&quot;:&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;bin  2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）1mysql -uroot -p  3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。123mysql&gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ZK-MVVM-01-Introduction">
-<meta property="og:url" content="http://yoursite.com/2020/06/07/zk-mvvm-01-introduction/index.html">
+<meta property="og:title" content="Mac下安装MySQL">
+<meta property="og:url" content="http://yoursite.com/2020/06/07/mysql-setup-mac/index.html">
 <meta property="og:site_name" content="LeeHuaJun&#39;s Notes">
-<meta property="og:description" content="简介MVVM简介MVVM [1]是源自Microsoft的设计模式Model-View-ViewModel的缩写。[2] 它是由著名的MVC模式的变体Martin Fowler引入的Presentation Model [3]的一种特殊化。 此模式具有3个角色：View，Model和ViewModel。 View 和 Model 起着与MVC中相同的作用。 MVVM中的ViewModel就像Vie">
-<meta property="og:image" content="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png">
-<meta property="og:image" content="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png">
-<meta property="article:published_time" content="2020-06-07T10:04:54.000Z">
-<meta property="article:modified_time" content="2020-06-07T12:53:26.101Z">
+<meta property="og:description" content="1、下载MySQL（5.7.x）2、安装MySQL（略）3、修改密码1）打开终端，为Path路径附加MySQL的bin目录1export PATH&#x3D;&quot;$PATH&quot;:&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;bin  2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）1mysql -uroot -p  3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。123mysql&gt;">
+<meta property="og:image" content="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607163813.png">
+<meta property="article:published_time" content="2020-06-07T12:50:47.000Z">
+<meta property="article:modified_time" content="2020-06-07T12:53:39.577Z">
 <meta property="article:author" content="LeeHuaJun">
-<meta property="article:tag" content="zk">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png">
+<meta name="twitter:image" content="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607163813.png">
 
 
 
@@ -162,13 +161,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/06/07/zk-mvvm-01-introduction/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/06/07/mysql-setup-mac/"/>
 
 
 
 
 
-  <title>ZK-MVVM-01-Introduction | LeeHuaJun's Notes</title>
+  <title>Mac下安装MySQL | LeeHuaJun's Notes</title>
   
 
 
@@ -295,7 +294,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/07/zk-mvvm-01-introduction/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/07/mysql-setup-mac/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LeeHuaJun">
@@ -312,7 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ZK-MVVM-01-Introduction</h1>
+          <h1 class="post-title" itemprop="name headline">Mac下安装MySQL</h1>
         
 
         <div class="post-meta">
@@ -324,7 +323,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-07T18:04:54+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-07T20:50:47+08:00">
                 2020-06-07
               </time>
             
@@ -347,8 +346,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/zk/" itemprop="url" rel="index">
-                    <span itemprop="name">zk</span>
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
                   </a>
                 </span>
 
@@ -389,39 +388,27 @@
       
 
       
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h2 id="MVVM简介"><a href="#MVVM简介" class="headerlink" title="MVVM简介"></a>MVVM简介</h2><p>MVVM [1]是源自Microsoft的设计模式Model-View-ViewModel的缩写。[2] 它是由著名的MVC模式的变体Martin Fowler引入的Presentation Model [3]的一种特殊化。 此模式具有3个角色：View，Model和ViewModel。 View 和 Model 起着与MVC中相同的作用。</p>
-<p>MVVM中的ViewModel就像View的特殊控制器一样，负责将Model中的数据公开到View，并为View的用户请求提供所需的操作和逻辑。 ViewModel是View抽象的类型，其中包含View的状态和行为。 但是ViewModel应该不包含对UI组件的引用，并且对View的可视元素一无所知。 因此，View和ViewModel之间有明显的分隔，这也是MVVM模式的关键特征。 从另一个角度讲，也可以说View层就像ViewModel的UI投影。</p>
-<blockquote>
-<p>[1] : WPF Apps With The Model-View-ViewModel Design Pattern <a href="http://msdn.microsoft.com/en-us/magazine/dd419663.aspx" target="_blank" rel="noopener">http://msdn.microsoft.com/en-us/magazine/dd419663.aspx</a><br>[2] : Introduction to Model/View/ViewModel pattern for building WPF apps <a href="http://blogs.msdn.com/b/johngossman/archive/2005/10/08/478683.aspx" target="_blank" rel="noopener">http://blogs.msdn.com/b/johngossman/archive/2005/10/08/478683.aspx</a><br>[3] : Presentation Model <a href="http://martinfowler.com/eaaDev/PresentationModel.html" target="_blank" rel="noopener">http://martinfowler.com/eaaDev/PresentationModel.html</a></p>
-</blockquote>
-<h2 id="MVVM的优势"><a href="#MVVM的优势" class="headerlink" title="MVVM的优势"></a>MVVM的优势</h2><blockquote>
-<p>将数据和逻辑与表示分离</p>
-</blockquote>
-<p>关键特性是ViewModel对View的可视元素一无所知，从而保证了从View到ViewModel的单向依赖，从而避免了UI和ViewModel之间的相互编程涟漪效应。 因此，它具有以下优点：</p>
-<ul>
-<li>它适合<code>design-by-contract</code>编程。[1] 只要制定好约定（contract）（显示哪些数据以及执行什么操作），ViewModel的UI设计和编码就可以并行且独立地进行。 任何一方都不会阻碍对方的前进。</li>
-<li>与View的松耦合。 只要不更改约定（contract），就可以不经修改就轻松地随时更改UI设计，而无需修改ViewModel。</li>
-<li>更好的可重用性。 使用通用的ViewModel为不同的设备设计不同的视图会更加容易。 对于具有更大屏幕的桌面浏览器，可以在一页上显示更多信息。 而对于显示空间有限的智能手机，无需更改（大部分）ViewModel，就可以设计基于向导的逐步操作UI。</li>
-<li>更好的可测试性。 由于ViewModel不能“看到”表示层，因此开发人员可以在没有UI元素的情况下轻松地对ViewModel类进行单元测试。</li>
-</ul>
-<p>[1] : Design by contract <a href="http://en.wikipedia.org/wiki/Design_by_contract" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Design_by_contract</a></p>
-<h2 id="MVVM-amp-ZK-Bind"><a href="#MVVM-amp-ZK-Bind" class="headerlink" title="MVVM &amp; ZK Bind"></a>MVVM &amp; ZK Bind</h2><p>由于ViewModel不包含对UI组件的引用，因此需要一种在View和ViewModel之间同步数据的机制。 此外，此机制还必须接受来自View层的用户请求，并将该请求桥接到ViewModel层提供的动作和逻辑。 这种机制是MVVM设计模式的核心部分，它要么是由应用程序开发人员自己编写的数据同步代码，要么是框架提供的数据绑定系统。 ZK 6提供了一种称为ZK Bind的数据绑定机制，作为MVVM设计模式的基础架构，而binder [1]在操作整个机制中起着关键作用。 绑定器就像一个代理，负责View和ViewModel之间的通信。</p>
-<p><img src="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png" alt="image-20200605153832368"></p>
-<blockquote>
-<p>[1] : binder ZK Developer’s <a href="#_bookmark14">DataBinding/Binder</a></p>
-</blockquote>
-<h2 id="详细操作流程"><a href="#详细操作流程" class="headerlink" title="详细操作流程"></a>详细操作流程</h2><p>在这里，我们使用一个简单的场景来说明MVVM如何在ZK中工作。 假定用户单击一个按钮，然后出现“ Hello World”文本。 流程如下：</p>
-<p><img src="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png" alt="image-20200605153922498"></p>
-<p>如前所述，绑定程序在UI和ViewModel之间同步数据。</p>
-<ol>
-<li>用户按下屏幕上的按钮（执行操作）。</li>
-<li>一个相应的事件被激发到binder。</li>
-<li>binder在ViewModel中找到相应的动作逻辑（它是Command）并执行它。</li>
-<li>动作逻辑从模型层访问数据并更新ViewModel的相应属性。</li>
-<li>ViewModel通知binder某些属性已更改。</li>
-<li>根据已更改的属性，binder从ViewModel加载数据。</li>
-<li>Binder然后更新相应的UI组件以向用户提供视觉反馈。</li>
-</ol>
+        <h3 id="1、下载MySQL（5-7-x）"><a href="#1、下载MySQL（5-7-x）" class="headerlink" title="1、下载MySQL（5.7.x）"></a>1、下载MySQL（5.7.x）</h3><h3 id="2、安装MySQL（略）"><a href="#2、安装MySQL（略）" class="headerlink" title="2、安装MySQL（略）"></a>2、安装MySQL（略）</h3><h3 id="3、修改密码"><a href="#3、修改密码" class="headerlink" title="3、修改密码"></a>3、修改密码</h3><h4 id="1）打开终端，为Path路径附加MySQL的bin目录"><a href="#1）打开终端，为Path路径附加MySQL的bin目录" class="headerlink" title="1）打开终端，为Path路径附加MySQL的bin目录"></a>1）打开终端，为Path路径附加MySQL的bin目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH="$PATH":/usr/local/mysql/bin</span><br></pre></td></tr></table></figure>
+
+<h4 id="2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）"><a href="#2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）" class="headerlink" title="2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）"></a>2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
+
+<h4 id="3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。"><a href="#3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。" class="headerlink" title="3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。"></a>3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show databases;</span><br><span class="line"></span><br><span class="line">ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.</span><br></pre></td></tr></table></figure>
+
+<h4 id="4）-修改密码，新密码为Abc-amp-20202020"><a href="#4）-修改密码，新密码为Abc-amp-20202020" class="headerlink" title="4） 修改密码，新密码为Abc&amp;20202020"></a>4） 修改密码，新密码为<code>Abc&amp;20202020</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set PASSWORD&#x3D;PASSWORD(&#39;Abc&amp;20202020&#39;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="5）再次执行"><a href="#5）再次执行" class="headerlink" title="5）再次执行"></a>5）再次执行</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
+
+<p>就正常了。</p>
+<h3 id="4、修改默认字符集"><a href="#4、修改默认字符集" class="headerlink" title="4、修改默认字符集"></a>4、修改默认字符集</h3><h4 id="1）检查默认安装的mysql的字符集"><a href="#1）检查默认安装的mysql的字符集" class="headerlink" title="1）检查默认安装的mysql的字符集"></a>1）检查默认安装的mysql的字符集</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show variables like &#39;%char%&#39;;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607163813.png" alt="image-20200517181851542"></p>
+<p><code>character_set_database</code>和<code>character_set_server</code>依然是<code>latin1</code>的字符集，也就是说mysql后续创建的表都是<code>latin1</code>字符集的，不是utf8，会造成一些麻烦。所以有必要修改my.cnf，在修改my.cnf之前一定要关闭mysql进程，不然会遇到mysql的sock不能连接的问题。</p>
+<h4 id="2）修改-新建-my-cnf"><a href="#2）修改-新建-my-cnf" class="headerlink" title="2）修改/新建 my.cnf"></a>2）修改/新建 <code>my.cnf</code></h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/my.cnf</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[client]</span></span><br><span class="line"><span class="attr">default-character-set</span>=utf8</span><br><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">character-set-server</span>=utf8</span><br></pre></td></tr></table></figure>
+
+<h4 id="3）检查结果："><a href="#3）检查结果：" class="headerlink" title="3）检查结果："></a>3）检查结果：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show variables like &#39;%char%&#39;;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -439,7 +426,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/zk/" rel="tag"># zk</a>
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
           
         </div>
       
@@ -452,14 +439,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/06/07/zk-mvvm-02-viewmodel/" rel="next" title="ZK-MVVM-02-ViewModel">
+                <i class="fa fa-chevron-left"></i> ZK-MVVM-02-ViewModel
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/06/07/zk-mvvm-02-viewmodel/" rel="prev" title="ZK-MVVM-02-ViewModel">
-                ZK-MVVM-02-ViewModel <i class="fa fa-chevron-right"></i>
+              <a href="/2020/06/07/mac-delete-default-inputlanguage/" rel="prev" title="Mac 删除默认的英文输入法">
+                Mac 删除默认的英文输入法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -612,7 +603,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MVVM简介"><span class="nav-number">1.1.</span> <span class="nav-text">MVVM简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVVM的优势"><span class="nav-number">1.2.</span> <span class="nav-text">MVVM的优势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVVM-amp-ZK-Bind"><span class="nav-number">1.3.</span> <span class="nav-text">MVVM &amp; ZK Bind</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#详细操作流程"><span class="nav-number">1.4.</span> <span class="nav-text">详细操作流程</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、下载MySQL（5-7-x）"><span class="nav-number">1.</span> <span class="nav-text">1、下载MySQL（5.7.x）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、安装MySQL（略）"><span class="nav-number">2.</span> <span class="nav-text">2、安装MySQL（略）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、修改密码"><span class="nav-number">3.</span> <span class="nav-text">3、修改密码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1）打开终端，为Path路径附加MySQL的bin目录"><span class="nav-number">3.1.</span> <span class="nav-text">1）打开终端，为Path路径附加MySQL的bin目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）"><span class="nav-number">3.2.</span> <span class="nav-text">2）然后通过以下命令登陆MySQL（密码就是前面自动生成的临时密码）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。"><span class="nav-number">3.3.</span> <span class="nav-text">3）登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4）-修改密码，新密码为Abc-amp-20202020"><span class="nav-number">3.4.</span> <span class="nav-text">4） 修改密码，新密码为Abc&amp;20202020</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5）再次执行"><span class="nav-number">3.5.</span> <span class="nav-text">5）再次执行</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、修改默认字符集"><span class="nav-number">4.</span> <span class="nav-text">4、修改默认字符集</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1）检查默认安装的mysql的字符集"><span class="nav-number">4.1.</span> <span class="nav-text">1）检查默认安装的mysql的字符集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2）修改-新建-my-cnf"><span class="nav-number">4.2.</span> <span class="nav-text">2）修改&#x2F;新建 my.cnf</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3）检查结果："><span class="nav-number">4.3.</span> <span class="nav-text">3）检查结果：</span></a></li></ol></li></ol></div>
             
 
           </div>
