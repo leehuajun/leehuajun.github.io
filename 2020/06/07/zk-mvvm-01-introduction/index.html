@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png">
 <meta property="og:image" content="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png">
 <meta property="article:published_time" content="2020-06-07T10:04:54.000Z">
-<meta property="article:modified_time" content="2020-06-07T10:07:11.709Z">
+<meta property="article:modified_time" content="2020-06-07T10:10:01.974Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="zk">
 <meta name="twitter:card" content="summary">
@@ -98,11 +98,9 @@
       
         <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h2 id="MVVM简介"><a href="#MVVM简介" class="headerlink" title="MVVM简介"></a>MVVM简介</h2><p>MVVM [1]是源自Microsoft的设计模式Model-View-ViewModel的缩写。[2] 它是由著名的MVC模式的变体Martin Fowler引入的Presentation Model [3]的一种特殊化。 此模式具有3个角色：View，Model和ViewModel。 View 和 Model 起着与MVC中相同的作用。</p>
 <p>MVVM中的ViewModel就像View的特殊控制器一样，负责将Model中的数据公开到View，并为View的用户请求提供所需的操作和逻辑。 ViewModel是View抽象的类型，其中包含View的状态和行为。 但是ViewModel应该不包含对UI组件的引用，并且对View的可视元素一无所知。 因此，View和ViewModel之间有明显的分隔，这也是MVVM模式的关键特征。 从另一个角度讲，也可以说View层就像ViewModel的UI投影。</p>
-<blockquote>
 <p>[1] : WPF Apps With The Model-View-ViewModel Design Pattern <a href="http://msdn.microsoft.com/en-us/magazine/dd419663.aspx" target="_blank" rel="noopener">http://msdn.microsoft.com/en-us/magazine/dd419663.aspx</a></p>
 <p>[2] : Introduction to Model/View/ViewModel pattern for building WPF apps <a href="http://blogs.msdn.com/b/johngossman/archive/2005/10/08/478683.aspx" target="_blank" rel="noopener">http://blogs.msdn.com/b/johngossman/archive/2005/10/08/478683.aspx</a></p>
 <p>[3] : Presentation Model <a href="http://martinfowler.com/eaaDev/PresentationModel.html" target="_blank" rel="noopener">http://martinfowler.com/eaaDev/PresentationModel.html</a></p>
-</blockquote>
 <h2 id="MVVM的优势"><a href="#MVVM的优势" class="headerlink" title="MVVM的优势"></a>MVVM的优势</h2><blockquote>
 <p>将数据和逻辑与表示分离</p>
 </blockquote>
@@ -113,12 +111,9 @@
 <li>更好的可重用性。 使用通用的ViewModel为不同的设备设计不同的视图会更加容易。 对于具有更大屏幕的桌面浏览器，可以在一页上显示更多信息。 而对于显示空间有限的智能手机，无需更改（大部分）ViewModel，就可以设计基于向导的逐步操作UI。</li>
 <li>更好的可测试性。 由于ViewModel不能“看到”表示层，因此开发人员可以在没有UI元素的情况下轻松地对ViewModel类进行单元测试。</li>
 </ul>
-<blockquote>
 <p>[1] : Design by contract <a href="http://en.wikipedia.org/wiki/Design_by_contract" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Design_by_contract</a></p>
-</blockquote>
 <h2 id="MVVM-amp-ZK-Bind"><a href="#MVVM-amp-ZK-Bind" class="headerlink" title="MVVM &amp; ZK Bind"></a>MVVM &amp; ZK Bind</h2><p>由于ViewModel不包含对UI组件的引用，因此需要一种在View和ViewModel之间同步数据的机制。 此外，此机制还必须接受来自View层的用户请求，并将该请求桥接到ViewModel层提供的动作和逻辑。 这种机制是MVVM设计模式的核心部分，它要么是由应用程序开发人员自己编写的数据同步代码，要么是框架提供的数据绑定系统。 ZK 6提供了一种称为ZK Bind的数据绑定机制，作为MVVM设计模式的基础架构，而binder [1]在操作整个机制中起着关键作用。 绑定器就像一个代理，负责View和ViewModel之间的通信。</p>
 <p><img src="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png" alt="image-20200605153832368"></p>
-<blockquote>
 <p>[1] : binder ZK Developer’s <a href="#_bookmark14">DataBinding/Binder</a></p>
 <h2 id="详细操作流程"><a href="#详细操作流程" class="headerlink" title="详细操作流程"></a>详细操作流程</h2><p>在这里，我们使用一个简单的场景来说明MVVM如何在ZK中工作。 假定用户单击一个按钮，然后出现“ Hello World”文本。 流程如下：</p>
 <p><img src="https://gitee.com/leehuajun/imgbed/raw/master/2020/20200607180539.png" alt="image-20200605153922498"></p>
@@ -132,7 +127,6 @@
 <li>根据已更改的属性，binder从ViewModel加载数据。</li>
 <li>Binder然后更新相应的UI组件以向用户提供视觉反馈。</li>
 </ol>
-</blockquote>
 
       
     </div>
